@@ -1,7 +1,11 @@
 package org.sprite.shard;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.sprite.SpriteDataSource;
 import org.sprite.config.SpriteConfig;
+import org.sprite.log.LogNameSpace;
+import org.sprite.log.SpriteLogger;
 import org.sprite.type.DataSourceType;
 
 import javax.sql.DataSource;
@@ -16,8 +20,9 @@ public class ShardDataSource extends SpriteDataSource {
         super(dataSourceMap,shardingRule,props, DataSourceType.SHARD);
     }
 
-    public void init() {
-        super.init();
+    public DataSource init() {
+        super.init0();
+        return this;
     }
 
     public Connection getConnection() throws SQLException {

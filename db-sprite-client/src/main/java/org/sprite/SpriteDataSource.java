@@ -26,8 +26,8 @@ public abstract class SpriteDataSource extends SpriteContext implements DataSour
         return dataSource.getConnection(username,password);
     }
 
-    public void init(){
-        super.init();
+    public void init0(){
+        super.init0();
         dataSource = InternalDataSourceFactory.createDataSource(this);
     }
 

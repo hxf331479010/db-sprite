@@ -11,10 +11,11 @@
     <modules>
         <module>db-sprite-client</module>
         <module>db-sprite-core</module>
-        <module>db-sprite-common</module>
+        <module>db-sprite-context</module>
         <module>db-sprite-transcation</module>
         <module>db-sprite-config</module>
         <module>db-sprite-exception</module>
+        <module>db-sprite-log</module>
     </modules>
 
     <properties>

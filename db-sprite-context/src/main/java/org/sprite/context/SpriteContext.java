@@ -22,7 +22,9 @@ public abstract class SpriteContext {
 
     protected final DataSourceType type;
 
-    protected void init() {
+
+    protected void init0() {
+
 
     }
 

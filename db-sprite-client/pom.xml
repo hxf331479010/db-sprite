@@ -19,14 +19,18 @@
 
         <dependency>
             <groupId>org.dbsprite</groupId>
-            <artifactId>db-sprite-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>db-sprite-context</artifactId>
+            <version>${sprite.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dbsprite</groupId>
+            <artifactId>db-sprite-log</artifactId>
+            <version>${sprite.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dbsprite</groupId>
             <artifactId>db-sprite-executor</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <version>${sprite.version}</version>
         </dependency>
 
     </dependencies>

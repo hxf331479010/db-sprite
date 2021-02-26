@@ -14,6 +14,7 @@ public interface IShardTableRule extends ITableRule {
 
     public Collection<String> getDataBaseGroupNames();
 
+
     public List<ICalculateRule> getDbCalculateRules();
 
     public List<ICalculateRule> getTbCalculateRules();

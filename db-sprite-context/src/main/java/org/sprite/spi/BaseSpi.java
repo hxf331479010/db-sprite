@@ -1,5 +1,8 @@
 package org.sprite.spi;
 
+import org.sprite.event.SpriteEvent;
+import org.sprite.runtime.SpriteRuntimeContext;
+
 /**
  * 这是SPI方式的一个基类接口。
  *
@@ -7,7 +10,9 @@ package org.sprite.spi;
  */
 public interface BaseSpi {
 
-    public String getType();
+    public int order();
 
-    public String getEvent();
+    public SpriteEvent getEvent();
+
+    public boolean invoke(SpriteRuntimeContext context);
 }

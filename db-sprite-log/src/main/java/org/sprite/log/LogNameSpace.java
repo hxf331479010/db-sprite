@@ -1,5 +1,6 @@
 package org.sprite.log;
 
+
 public enum LogNameSpace {
 
     Init("db-sprite-init"),

@@ -4,30 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.dbsprite</groupId>
-    <artifactId>db-sprite</artifactId>
+    <groupId>org.example</groupId>
+    <artifactId>db-sprite-sample</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>db-sprite-client</module>
-        <module>db-sprite-core</module>
-        <module>db-sprite-context</module>
-        <module>db-sprite-transcation</module>
-        <module>db-sprite-config</module>
-        <module>db-sprite-exception</module>
-        <module>db-sprite-log</module>
-        <module>db-sprite-common</module>
+        <module>db-sprite-sample-jdbc</module>
     </modules>
 
-    <properties>
-        <sprite.version>1.0-SNAPSHOT</sprite.version>
-    </properties>
+    <dependencies>
 
-    <dependencyManagement>
-        <dependencies>
-        </dependencies>
-    </dependencyManagement>
+        <dependency>
+            <groupId>org.dbsprite</groupId>
+            <artifactId>db-sprite-client</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
+    </dependencies>
 
     <build>
         <plugins>
